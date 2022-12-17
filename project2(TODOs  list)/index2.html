@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOs list</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <nav>
+            <ul>
+                <li><a href="Navbar.com">Navbar</a></li>
+                <li><a href="Home.com">Home</a></li>
+                <li><a href="Link.com">Link</a></li>
+                <li><form action="#" method="post">
+                    <div class="select">
+                      <select name="nameValueSelect" class="select__field" required>
+                        <option value="" selected>Choose</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                        <option>Option 6</option>
+                      </select>
+                    </div>
+                    </form></li>
+                <li><div class="search">
+                    <input type="text" name="" id="" placeholder="Search here...">
+                </div></li>
+                <li><div class="btn1">
+                    <button>search</button>
+                </div></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h2 class="text-center">TODOs List</h2>
+        <div class="title">
+            <h4>Title</h4>
+            <input id ="title" type="text"placeholder="Enter here">
+            <p>Add items to the list</p>
+        </div>
+            <div class="discription">
+            <h4>Description</h4>
+            <textarea name="" id="discription" cols="109" rows="3" placeholder="Enter here"></textarea>
+            <button id="add">  Add To List</button>
+            <button id="reset1"onclick="reset2()"> Clear list </button>
+        </div>
+    </div>
+    <div class="data">
+    <h2>Your items</h2>
+
+    <table style="width:100%">
+        <hr>
+    <thead>
+        <tr>
+          <th>Sr no.</th>
+          <th>Item Name</th>
+          <th>Item discription</th>
+          <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id = "tablebody">
+        <tr>
+            <td>1</td>
+          <td>Get some coffee</td>
+          <td>You need a coffee as you are coder</td>
+          <td><button class = "delete">Delete</button></td>
+        </tr>
+    </tbody>
+        <hr>
+        <script src="index2.js"></script>
+    </table>
+    </div>
+
+    </body>
+</html>
